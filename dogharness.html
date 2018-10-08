@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Muddy Paws Adventure Gear</title>
+    <meta charset="UTF-8">
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,700italic,800" rel="stylesheet">
+    <!-- javascript -->
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav id="dogharnessheader">
+      <div id="nav-black">
+        <a href="index.html"><img src="images/logoblack.png"></a>
+        <ul>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+
+
+  <div class="main">
+
+    <div class="row productsection">
+
+      <!-- <div class="product"> -->
+
+        <div class="product col-7">
+          <!-- <img src="images/dogharnessstrawberry.png" id="dogharnessimg"> -->
+        </div>
+
+        <div class="product col-5">
+          <h1 class="productname">Dog Harness</h1>
+          <h2 class="productprice">$19.99</h2>
+          <br>
+          <h4 class="productcategory">1. Choose a size</h4>
+          <!-- <button class="option">Tiny</button><button class="option">Small</button><button class="option">Medium</button><button class="option">Large</button> -->
+          <label class="tiny size">
+            <input type="radio" name="size" value="tiny">
+            <div class="option sizebutton"><span>Tiny</span></div>
+          </label>
+          <label class="small size">
+            <input type="radio" name="size" value="small">
+            <div class="option sizebutton"><span>Small</span></div>
+          </label>
+          <label class="medium size">
+            <input type="radio" name="size" value="medium">
+            <div class="option sizebutton"><span>Medium</span></div>
+          </label>
+          <label class="large size">
+            <input type="radio" name="size" value="large">
+            <div class="option sizebutton"><span>Large</span></div>
+          </label>
+
+          <br><br><br>
+
+          <h4 class="productcategory">2. Pick a color</h4>
+          <!-- <button class="option coloroption colorstrawberry"><span><img src="images/strawberry.png"</span></button><button class="option coloroption coloroption2"></button><button class="option coloroption coloroption3"></button><button class="option coloroption coloroption4"></button> -->
+
+          <label class="strawberry">
+            <input type="radio" name="color" value="strawberry" onClick="strawberrypic()">
+            <div class="layer"></div>
+            <div class="colorbutton"><span></span></div>
+          </label>
+
+          <label class="blackberry">
+            <input type="radio" name="color" value="blackberry" onClick="blackberrypic()">
+            <div class="layer"></div>
+            <div class="colorbutton"><span></span></div>
+          </label>
+
+          <label class="crazyberry">
+            <input type="radio" name="color" value="crazyberry" onClick="crazyberrypic()">
+            <div class="layer"></div>
+            <div class="colorbutton"><span></span></div>
+          </label>
+
+          <label class="fireorange">
+            <input type="radio" name="color" value="fireorange" onClick="fireorangepic()">
+            <div class="layer"></div>
+            <div class="colorbutton"><span></span></div>
+          </label>
+
+          <br><br><br>
+
+          <input type="submit" name="submit" value="submit">
+          <button type="submit">Add to cart <span class="arrow">&rarr;</span></button>
+
+        </div>
+
+      <!-- </div> -->
+
+    </div>
+
+    <div class="row quiz">
+
+      <h1 class="productname">Find the perfect fit</h1>
+      <p>All pets are different. Find the perfect fit so you and your four-legged companion can comfortably and confidently walk in style.</h2>
+
+      <div class="col-8 quizsection">
+        <img src="images/dogsilhouette.png" class="quizimage">
+      </div>
+
+      <div class="col-4 quizsection">
+        <img src="images/a.png" class="quizbullet" style="vertical-align:middle;"><span class="quizinstruction">Measure around the neck</span><br>
+        <input type="text" name="neck" id="neck" placeholder="Neck">
+        <select id="neckunits">
+          <option value="cm">cm</option>
+          <option value="in">in</option>
+        </select>
+        <br><br>
+        <img src="images/b.png" class="quizbullet" style="vertical-align:middle;"><span class="quizinstruction">Measure around the girth</span><br>
+        <input type="text" name="girth" id="girth" placeholder="Girth">
+        <select id="girthunits">
+          <option value="cm">cm</option>
+          <option value="in">in</option>
+        </select>
+        <br><br>
+        <button onClick="findSize()">Find my size <span class="arrow">&rarr;</span></button>
+        <br><br>
+        <div class="quizresults">
+          <h4 class="productcategory" id="recomm"></h4>
+          <p id="sizeresults"></p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
