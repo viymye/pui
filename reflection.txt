@@ -1,0 +1,10 @@
+What challenges or bugs did you encounter and how did you overcome the
+challenges?
+
+I encountered difficulties with aligning elements exactly as they appear in the wireframes. I overcame these challenges by experimenting and searching online about different position properties. 
+
+
+How is the brand identity of your client reflected through your design choices?
+What kind of look and feel did you design for them and why?
+
+Muddy Paws Adventure Gear is a brand for high-quality pet accessories and outdoor gear. To reflect this brand identity, I wanted to create a flawless browsing and buying experience so users are able to pick the best product for their needs, and so they can spend more time enjoying the outdoors and less time agonizing over which items to choose. The UI is minimal and feels friendly so users know that they can trust this brand with the happiness and safety of their pet, even in the most precarious of situations.
