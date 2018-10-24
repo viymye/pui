@@ -8,6 +8,7 @@
     <!-- fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,700italic,800" rel="stylesheet">
     <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
 </head>
 
@@ -20,7 +21,7 @@
         <ul>
           <li><a href="dogs.html">Dogs</a></li>
           <li><a href="cats.html">Cats</a></li>
-          <li><a href="#">Cart</a></li>
+          <li id="navcart"><a href="cart.html"><img src="images/cartblack.png"></a><span id="cartnum"></span></li>
         </ul>
       </div>
     </nav>
@@ -43,7 +44,7 @@
           <h1 class="productname">Dog Harness</h1>
           <h2 class="productprice">$19.99</h2>
           <br>
-          <h4 class="productcategory">1. Choose a size</h4>
+          <h4 class="productcategory">1. Choose a size <span class="errormsg" id="sizeerror"></span></h4>
           <!-- <button class="option">Tiny</button><button class="option">Small</button><button class="option">Medium</button><button class="option">Large</button> -->
           <label class="tiny size">
             <input type="radio" name="size" value="tiny">
@@ -64,7 +65,7 @@
 
           <br><br><br>
 
-          <h4 class="productcategory">2. Pick a color</h4>
+          <h4 class="productcategory">2. Pick a color <span class="errormsg" id="colorerror"></span></h4>
           <!-- <button class="option coloroption colorstrawberry"><span><img src="images/strawberry.png"</span></button><button class="option coloroption coloroption2"></button><button class="option coloroption coloroption3"></button><button class="option coloroption coloroption4"></button> -->
 
           <label class="strawberry">
@@ -96,6 +97,7 @@
           <input type="submit" name="submit" value="submit">
           <button type="submit">Add to cart <span class="arrow">&rarr;</span></button>
 
+
         </div>
 
       <!-- </div> -->
@@ -104,7 +106,7 @@
 
     <div class="row quiz">
 
-      <h1 class="productname">Find the perfect fit</h1>
+      <h1>Find the perfect fit</h1>
       <p>All pets are different. Find the perfect fit so you and your four-legged companion can comfortably and confidently walk in style.</h2>
 
       <div class="col-8 quizsection">
