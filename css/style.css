@@ -701,6 +701,7 @@ select {
 .checkoutrow {
   width: 60vw;
   margin: 0 auto 0 auto;
+    padding-bottom: 300px;
 }
 
 #cartitems {
