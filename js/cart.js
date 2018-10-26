@@ -1,21 +1,21 @@
-function getImage(productname) {
+function getImage(productname, color) {
   if (productname=="Dog Harness") {
-    return "images/dogharness.png"
+    return "images/dogharness"+color+".png"
   }
   else if (productname=="Cat Harness") {
-    return "images/catharness.png"
+    return "images/catharness"+color+".png"
   }
   else if (productname=="Cat Backpack") {
-    return "images/catbackpack.png"
+    return "images/catbackpack"+color+".png"
   }
-  else if (productname=="Food storage attachment to harness") {
-    return "images/foodbowl.png"
+  else if (productname=="Food Storage Attachment to Harness") {
+    return "images/foodbowl"+color+".png"
   }
-  else if (productname=="Water storage attachment to harness") {
-    return "images/waterbowl.png"
+  else if (productname=="Water Storage Attachment to Harness") {
+    return "images/waterbowl"+color+".png"
   }
-  else if (productname=="Dog/Cat GPS tracker collar") {
-    return "images/gpscollar.png"
+  else if (productname=="GPS Tracker Collar") {
+    return "images/gpscollar"+color+".png"
   }
 }
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
       var totalprice = 0;
       for (var i=0; i < cart.products.length; i++) {
         product = cart.products[i];
-        image = getImage(product.name);
+        image = getImage(product.name, product.color);
         totalprice += Number(product.price);
         $("#cartitems").append("<div class='card' id='item"+i+"'><div class='removeitem'>✕</div><img style='width:65px;vertical-align:middle;' src='"+image+"'><div class='alignleft'><div id='cpname'>"+product.name+"</div><div id='cpcolor'>Color: "+product.color+"</div><div id='cpsize'>Size: "+product.size+"</div></div><div class='rightalign'><div id='cpprice'>$"+product.price+"</div></div></div>");
         $("#totalp").html("<p class='productcategory'>Total</p><h2 id='totalprice'>$"+totalprice+"</h2>");

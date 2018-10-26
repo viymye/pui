@@ -1,17 +1,17 @@
-function strawberrypic() {
-  document.getElementsByClassName('product col-7')[0].style.backgroundImage = "url('images/dogharnessstrawberry.png')";
+function strawberrypic(product) {
+  document.getElementsByClassName('product col-7')[0].style.backgroundImage = "url('images/"+product+"strawberry.png')";
 }
 
-function blackberrypic() {
-  document.getElementsByClassName('product col-7')[0].style.backgroundImage = "url('images/dogharnessblackberry.png')";
+function blackberrypic(product) {
+  document.getElementsByClassName('product col-7')[0].style.backgroundImage = "url('images/"+product+"blackberry.png')";
 }
 
-function crazyberrypic() {
-  document.getElementsByClassName('product col-7')[0].style.backgroundImage = "url('images/dogharnesscrazyberry.png')";
+function crazyberrypic(product) {
+  document.getElementsByClassName('product col-7')[0].style.backgroundImage = "url('images/"+product+"crazyberry.png')";
 }
 
-function fireorangepic() {
-  document.getElementsByClassName('product col-7')[0].style.backgroundImage = "url('images/dogharnessfireorange.png')";
+function fireorangepic(product) {
+  document.getElementsByClassName('product col-7')[0].style.backgroundImage = "url('images/"+product+"fireorange.png')";
 }
 
 function findSize() {
